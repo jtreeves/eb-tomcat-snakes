@@ -17,8 +17,8 @@ else
   jar -cf ROOT.war *.jsp images css js WEB-INF .ebextensions/*.config .ebextensions/*.json
 fi
 echo .
-if [ -d "/Library/Tomcat/webapps" ]; then
-  cp ROOT.war /Library/Tomcat/webapps
+if [ -d "/opt/homebrew/Cellar/tomcat/10.1.5/libexec/webapps" ]; then
+  cp ROOT.war /opt/homebrew/Cellar/tomcat/10.1.5/libexec/webapps
   echo .
 fi
 mv ROOT.war ../
